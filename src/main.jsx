@@ -15,8 +15,12 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
-        <Router>
-            <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+        <Router basename="/LMS-System">
+            <ClerkProvider
+                publishableKey={PUBLISHABLE_KEY}
+                navigate={(to) => window.history.pushState(null, "", to)}
+                afterSignOutUrl="/"
+            >
                 <AppContextProvider>
                     <App />
                 </AppContextProvider>
@@ -24,3 +28,15 @@ createRoot(document.getElementById("root")).render(
         </Router>
     </StrictMode>
 );
+
+{
+    /* <StrictMode>
+        <Router basename="/LMS-System">
+            <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
+                <AppContextProvider>
+                    <App />
+                </AppContextProvider>
+            </ClerkProvider>
+        </Router>
+    </StrictMode> */
+}

@@ -1,10 +1,34 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FaRegHeart } from "react-icons/fa";
-import { AppContext } from "../../context/AppContext";
+import { useAppContext } from "../../../context/AppContext";
+import PropTypes from "prop-types";
+import "./CourseHoverPanel.scss";
 
-const CourseHoverPanel = ({ course, showLeft }) => {
-    const { calculateNumOfLecture, calculateCourseDuration } =
-        useContext(AppContext);
+CourseHoverPanel.propTypes = {
+    course: PropTypes.shape({
+        courseTitle: PropTypes.string.isRequired,
+    }).isRequired,
+};
+
+function CourseHoverPanel({ course, showLeft }) {
+    const {
+        calculateNumOfLecture,
+        calculateCourseDuration,
+        addToFavorites,
+        removeFromFavorites,
+        isFavorite,
+    } = useAppContext();
+
+    const favorite = isFavorite(course._id);
+
+    function onFavoriteClick(e) {
+        e.preventDefault();
+        if (favorite) {
+            removeFromFavorites(course._id);
+        } else {
+            addToFavorites(course);
+        }
+    }
 
     return (
         <div
@@ -41,17 +65,20 @@ const CourseHoverPanel = ({ course, showLeft }) => {
                     </ul>
                 </div>
 
-                <div className="flex items-center justify-between mt-6">
+                <div className="flex items-center justify-between mt-6 group-btn">
                     <button className="bg-blue-600 text-white text-sm font-medium px-6 py-2.5 rounded-md hover:bg-blue-700 transition shadow-sm">
                         Add to cart
                     </button>
-                    <button className="w-9 h-9 flex items-center justify-center border border-gray-300 rounded-full hover:text-red-500 hover:border-red-500 transition">
-                        <FaRegHeart className="text-lg" />
+                    <button
+                        onClick={onFavoriteClick}
+                        className={`favorite-btn ${favorite ? "active" : ""}`}
+                    >
+                        <FaRegHeart className="heart-icon" />
                     </button>
                 </div>
             </div>
         </div>
     );
-};
+}
 
 export default CourseHoverPanel;

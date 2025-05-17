@@ -2,7 +2,7 @@ import React, { useContext, useState, useRef } from "react";
 import { assets } from "../../assets/assets";
 import { AppContext } from "../../context/AppContext";
 import { Link } from "react-router-dom";
-import CourseHoverPanel from "./CourseHoverPanel";
+import CourseHoverPanel from "./CourseHoverPanel/CourseHoverPanel";
 
 const CourseCard = ({ course }) => {
     const { currency, calculateRating } = useContext(AppContext);

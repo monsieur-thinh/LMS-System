@@ -9,7 +9,6 @@ const Navbar = () => {
     const { navigate, isEducator } = useContext(AppContext);
 
     const isCourseListPage = location.pathname.includes("/course-list");
-
     const { openSignIn } = useClerk();
     const { user } = useUser();
 

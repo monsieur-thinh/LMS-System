@@ -43,8 +43,10 @@ import profile_img2 from "./profile_img2.png";
 import profile_img3 from "./profile_img3.png";
 import lesson_icon from "./lesson_icon.svg";
 import shopping_cart from "./shopping_cart_icon.svg";
-import heart_icon from "./blank_heart_icon.svg";
-import black_heart_icon from "./black_heart_icon.svg";
+import heart_icon from "./blank_heart_icon.png";
+import red_heart_icon from "./red_heart_icon.png";
+import close_btn from "./close_btn.png";
+import delete_icon from "./delete.svg";
 
 export const assets = {
     logo,
@@ -92,8 +94,10 @@ export const assets = {
     blue_tick_icon,
     lesson_icon,
     shopping_cart,
-    black_heart_icon,
+    red_heart_icon,
     heart_icon,
+    close_btn,
+    delete_icon,
 };
 
 export const dummyEducatorData = {

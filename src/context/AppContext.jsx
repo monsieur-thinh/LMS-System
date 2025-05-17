@@ -1,10 +1,12 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import App from "../App";
 import { dummyCourses } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import humanizeDuration from "humanize-duration";
 
 export const AppContext = createContext();
+export const useAppContext = () => useContext(AppContext);
+
 // export useContextApp = () => useContext(AppContext)
 
 const AppContextProvider = (props) => {
@@ -75,25 +77,37 @@ const AppContextProvider = (props) => {
     }, []);
 
     // Favorites handle
+
     useEffect(() => {
         const storedFavs = localStorage.getItem("favorites");
-        if (storedFavs) setFavorites(JSON.parse(storedFavs));
+        if (storedFavs) {
+            try {
+                setFavorites(JSON.parse(storedFavs));
+            } catch (e) {
+                console.error("Failed to parse favorites from localStorage", e);
+            }
+        }
     }, []);
 
+    // 2. Save mỗi khi thay đổi
     useEffect(() => {
-        localStorage.setItem("favorites", JSON.stringify(favorites));
+        if (favorites.length > 0) {
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+        }
     }, [favorites]);
-
+    // handle
     const addToFavorites = (course) => {
         setFavorites((prev) => [...prev, course]);
     };
 
     const removeFromFavorites = (courseID) => {
-        setFavorites((prev) => prev.filter((course) => course.id !== courseID));
+        setFavorites((prev) =>
+            prev.filter((course) => course._id !== courseID)
+        );
     };
 
     const isFavorite = (courseID) => {
-        return favorites.some((course) => course.id === courseID);
+        return favorites.some((course) => course._id === courseID);
     };
 
     const value = {

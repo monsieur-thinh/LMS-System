@@ -24,6 +24,7 @@ const App = () => {
         <div className="text-default min-h-screen bg-white">
             {!isEducatorRoute && <Navbar />}
             <Routes>
+                {/* student routes */}
                 <Route path="/" element={<Home />} />
                 <Route path="/course-list" element={<CourseList />} />
                 <Route path="/course-list/:input" element={<CourseList />} />
@@ -33,6 +34,7 @@ const App = () => {
                 <Route path="/loading/:path" element={<Loading />} />
                 <Route path="/wishlist" element={<WishList />} />
 
+                {/* Educator Routes */}
                 <Route path="/educator" element={<Educator />}>
                     <Route path="educator" element={<Dashboard />} />
                     <Route path="add-course" element={<AddCourse />} />
