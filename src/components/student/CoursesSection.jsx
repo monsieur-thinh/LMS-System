@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 // import { dummyCourses } from "../../assets/assets";
 import CourseCard from "./CourseCard";
-import { AppContext } from "../../context/AppContext";
+import { useAppContext } from "../../context/AppContext";
 
 const CoursesSection = () => {
-    const { allCourses } = useContext(AppContext);
+    const { allCourses } = useAppContext();
 
     return (
         <div className="py-16 md:px-40 px-8">

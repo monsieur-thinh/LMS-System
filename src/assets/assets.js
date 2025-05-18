@@ -100,16 +100,58 @@ export const assets = {
     delete_icon,
 };
 
-export const dummyEducatorData = {
-    _id: "675ac1512100b91a6d9b8b24",
-    name: "GreatStack",
-    email: "user.greatstack@gmail.com",
-    imageUrl:
-        "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yclFkaDBOMmFqWnBoTTRBOXZUanZxVlo0aXYifQ",
-    createdAt: "2024-12-12T10:56:17.930Z",
-    updatedAt: "2024-12-12T10:56:17.930Z",
-    __v: 0,
-};
+export const dummyEducatorData = [
+    {
+        _id: "675ac1512100b91a6d9b8b24",
+        name: "GreatStack",
+        email: "user.greatstack@gmail.com",
+        imageUrl:
+            "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yclFkaDBOMmFqWnBoTTRBOXZUanZxVlo0aXYifQ",
+        createdAt: "2024-12-12T10:56:17.930Z",
+        updatedAt: "2024-12-12T10:56:17.930Z",
+        __v: 0,
+    },
+    {
+        _id: "675ac1512100b91a6d9b8b24",
+        name: "GreatStack",
+        email: "user.greatstack@gmail.com",
+        imageUrl:
+            "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18yclFkaDBOMmFqWnBoTTRBOXZUanZxVlo0aXYifQ",
+        createdAt: "2024-12-12T10:56:17.930Z",
+        updatedAt: "2024-12-12T10:56:17.930Z",
+        __v: 0,
+    },
+    {
+        _id: "675ac1512100b91a6d9b8c11",
+        name: "Linda Tran",
+        email: "linda.tran@eduverse.com",
+        imageUrl:
+            "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ182NzVhYzE1MTIxMDBiOTFhNmQ5YjhjMTEifQ",
+        createdAt: "2025-01-04T09:20:30.512Z",
+        updatedAt: "2025-01-04T09:20:30.512Z",
+        __v: 0,
+    },
+    {
+        _id: "675ac1512100b91a6d9b8c12",
+        name: "Kevin Nguyen",
+        email: "kevin.nguyen@codehub.dev",
+        imageUrl:
+            "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ182NzVhYzE1MTIxMDBiOTFhNmQ5YjhjMTIifQ",
+        createdAt: "2025-01-10T14:44:18.391Z",
+        updatedAt: "2025-01-10T14:44:18.391Z",
+        __v: 0,
+    },
+    {
+        _id: "675ac1512100b91a6d9b8c13",
+        name: "Sarah Vo",
+        email: "sarah.vo@teachx.io",
+        imageUrl:
+            "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ182NzVhYzE1MTIxMDBiOTFhNmQ5YjhjMTMifQ",
+        createdAt: "2025-02-01T11:02:45.720Z",
+        updatedAt: "2025-02-01T11:02:45.720Z",
+        __v: 0,
+    },
+];
 
 export const dummyTestimonial = [
     {
@@ -230,6 +272,46 @@ export const dummyStudentEnrolled = [
         },
         courseTitle: "Web Development Bootcamp",
         purchaseDate: "2024-12-20T11:04:48.798Z",
+    },
+    {
+        student: {
+            _id: "user_2qjlXfbr8JNzO67vNJKtFl92xA",
+            name: "Linh Nguyen",
+            imageUrl:
+                "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18ycWpsWGZicjhKTnpPNjd2TkpLdEZsOTJ4QSJ9",
+        },
+        courseTitle: "SQL & Relational Databases",
+        purchaseDate: "2025-04-20T10:12:34.217Z",
+    },
+    {
+        student: {
+            _id: "user_1zzpTuvH82LjO8xAkGsWqRfYY2",
+            name: "David Tran",
+            imageUrl:
+                "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18xeHp0VXZoODJMajh4QWtHc1dxUmZZWTIifQ",
+        },
+        courseTitle: "UI Animation with CSS & JavaScript",
+        purchaseDate: "2025-04-22T08:45:20.901Z",
+    },
+    {
+        student: {
+            _id: "user_3lpZaMiLoKqOa5AeREe92FgQs9",
+            name: "Trang Le",
+            imageUrl:
+                "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zbHBaYU1pTG9LcU9hNUFlUkVlOTJHZ1FzOSJ9",
+        },
+        courseTitle: "Fullstack Web Development with MERN",
+        purchaseDate: "2025-04-25T13:20:50.320Z",
+    },
+    {
+        student: {
+            _id: "user_4vvDmjQu96FxlkP9T2rHvSsJe7",
+            name: "Minh Chau",
+            imageUrl:
+                "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ180dnZEbWpRdTk2Rnhsa1A5VDJySHZTc0plNwifQ",
+        },
+        courseTitle: "Introduction to Cybersecurity",
+        purchaseDate: "2025-04-27T16:55:12.199Z",
     },
 ];
 
@@ -801,5 +883,599 @@ export const dummyCourses = [
         __v: 1,
         courseThumbnail:
             "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg",
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e175",
+        courseTitle: "Learn JavaScript 2025",
+        level: "Beginner",
+        courseDescription:
+            "<h2>Learn JavaScript Beginner Concepts</h2><p>Embark on an exciting journey into the vibrant world of JavaScript through this detailed and engaging introductory video.</p><ul><li>Understand the building blocks of JavaScript, including variables, data types, and operators.</li><li>Learn how to use loops and conditionals to control the flow of your programs.</li><li> Discover the power of functions to create reusable code blocks.</li></ul>",
+        coursePrice: 70.99,
+        isPublished: true,
+        discount: 40,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "JavaScript Basics",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "What is Javascript",
+                        lectureDuration: 700,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Understanding Cyber Threats",
+                        lectureDuration: 750,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "Network Security Fundamentals",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Securing Networks",
+                        lectureDuration: 800,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Firewalls and VPNs",
+                        lectureDuration: 850,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+        educator: "675ac1512100b91a6d9b8b24",
+        enrolledStudents: ["user_2qjlgkAqIMpiR2flWIRzvWKtE0w"],
+        courseRatings: [],
+        createdAt: "2024-12-17T08:16:53.622Z",
+        updatedAt: "2025-01-02T06:56:13.208Z",
+        __v: 1,
+        courseThumbnail:
+            "https://img-c.udemycdn.com/course/480x270/851712_fc61_6.jpg",
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1ab",
+        courseTitle: "Introduction to Cybersecurity",
+        level: "Intermediate",
+        courseDescription:
+            "<h2>Learn to design stunning interfaces</h2><p>This course will help you master Figma, design systems, prototyping and real-world UX processes.</p><h2>Learn to design stunning interfaces</h2><p>This course will help you master Figma, design systems, prototyping and real-world UX processes.</p><p>By the end of this course, you will be able to identify and mitigate risks, implement security best practices, and understand the fundamentals of encryption and network security.</p><ul><li>Understand common cybersecurity threats</li><li>Learn about encryption and secure communication</li><li>Explore tools for penetration testing</li></ul>",
+        coursePrice: 159.99,
+        isPublished: true,
+        discount: 15,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "Cybersecurity Basics",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "Introduction to Cybersecurity",
+                        lectureDuration: 700,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Understanding Cyber Threats",
+                        lectureDuration: 750,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "Network Security Fundamentals",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Securing Networks",
+                        lectureDuration: 800,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Firewalls and VPNs",
+                        lectureDuration: 850,
+                        lectureUrl: "https://youtu.be/-HeadgoqJ7A",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+        educator: "675ac1512100b91a6d9b8b24",
+        enrolledStudents: ["user_2qjlgkAqIMpiR2flWIRzvWKtE0w"],
+        courseRatings: [],
+        createdAt: "2024-12-17T08:16:53.622Z",
+        updatedAt: "2025-01-02T06:56:13.208Z",
+        __v: 1,
+        courseThumbnail:
+            "https://img.youtube.com/vi/WbV3zRgpw_E/maxresdefault.jpg",
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1ac",
+        courseTitle: "Frontend Development with React",
+        level: "Beginner",
+        courseDescription:
+            "<h2>Master the basics of React</h2><p>This course introduces you to components, props, state, and JSX through practical examples.</p><ul><li>Build reusable UI components</li><li>Understand component lifecycle</li><li>Use hooks effectively</li></ul>",
+        coursePrice: 149.99,
+        isPublished: true,
+        discount: 10,
+        courseThumbnail:
+            "https://img.youtube.com/vi/dGcsHMXbSOA/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b24",
+        enrolledStudents: ["user_123abc", "user_456xyz"],
+        courseRatings: [],
+        createdAt: "2025-01-10T09:00:00.000Z",
+        updatedAt: "2025-01-12T10:30:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "React Fundamentals",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "Introduction to React",
+                        lectureDuration: 600,
+                        lectureUrl: "https://youtu.be/dGcsHMXbSOA",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "JSX and Rendering",
+                        lectureDuration: 720,
+                        lectureUrl: "https://youtu.be/dGcsHMXbSOA",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "React Hooks",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Using useState",
+                        lectureDuration: 660,
+                        lectureUrl: "https://youtu.be/dGcsHMXbSOA",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Using useEffect",
+                        lectureDuration: 740,
+                        lectureUrl: "https://youtu.be/dGcsHMXbSOA",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1ad",
+        courseTitle: "Machine Learning with Python",
+        level: "Advanced",
+        courseDescription:
+            "<h2>Train powerful ML models</h2><p>Learn supervised and unsupervised learning, model evaluation, and Scikit-learn hands-on.</p><ul><li>Understand linear regression and decision trees</li><li>Work with real-world datasets</li><li>Optimize model performance</li></ul>",
+        coursePrice: 189.99,
+        isPublished: true,
+        discount: 20,
+        courseThumbnail:
+            "https://img.youtube.com/vi/GwIo3gDZCVQ/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b25",
+        enrolledStudents: ["user_ml101", "user_ml102", "user_ml103"],
+        courseRatings: [],
+        createdAt: "2025-02-01T11:20:00.000Z",
+        updatedAt: "2025-02-02T12:00:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "ML Foundations",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "What is Machine Learning?",
+                        lectureDuration: 850,
+                        lectureUrl: "https://youtu.be/GwIo3gDZCVQ",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Types of Learning",
+                        lectureDuration: 780,
+                        lectureUrl: "https://youtu.be/GwIo3gDZCVQ",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "Model Evaluation",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Train-Test Split",
+                        lectureDuration: 720,
+                        lectureUrl: "https://youtu.be/GwIo3gDZCVQ",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Cross Validation",
+                        lectureDuration: 790,
+                        lectureUrl: "https://youtu.be/GwIo3gDZCVQ",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1ae",
+        courseTitle: "Docker & Kubernetes for DevOps",
+        level: "Intermediate",
+        courseDescription:
+            "<h2>Deploy and scale apps efficiently</h2><p>This course introduces containers, Dockerfiles, images, volumes, Kubernetes basics, and deployments.</p><ul><li>Create Docker containers</li><li>Deploy apps to Kubernetes</li><li>Manage microservices at scale</li></ul>",
+        coursePrice: 169.99,
+        isPublished: true,
+        discount: 5,
+        courseThumbnail:
+            "https://img.youtube.com/vi/X48VuDVv0do/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b27",
+        enrolledStudents: [],
+        courseRatings: [],
+        createdAt: "2025-03-01T10:00:00.000Z",
+        updatedAt: "2025-03-02T10:00:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "Getting Started with Docker",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "Installing Docker",
+                        lectureDuration: 690,
+                        lectureUrl: "https://youtu.be/X48VuDVv0do",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Creating Images & Containers",
+                        lectureDuration: 730,
+                        lectureUrl: "https://youtu.be/X48VuDVv0do",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "Kubernetes Basics",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Deployments and Services",
+                        lectureDuration: 810,
+                        lectureUrl: "https://youtu.be/X48VuDVv0do",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Scaling and Load Balancing",
+                        lectureDuration: 860,
+                        lectureUrl: "https://youtu.be/X48VuDVv0do",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1af",
+        courseTitle: "Fullstack Web Development with MERN",
+        level: "Intermediate",
+        courseDescription:
+            "<h2>Become a Fullstack Developer</h2><p>Learn to build complete web applications using MongoDB, Express, React, and Node.js.</p><ul><li>Build RESTful APIs with Express</li><li>Create dynamic UIs with React</li><li>Integrate backend and frontend</li></ul>",
+        coursePrice: 179.99,
+        isPublished: true,
+        discount: 12,
+        courseThumbnail:
+            "https://img.youtube.com/vi/4Z9KEBexzcM/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b30",
+        enrolledStudents: ["user_full1", "user_full2"],
+        courseRatings: [],
+        createdAt: "2025-03-20T14:45:00.000Z",
+        updatedAt: "2025-03-21T10:10:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "Frontend with React",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "React Setup & JSX",
+                        lectureDuration: 720,
+                        lectureUrl: "https://youtu.be/4Z9KEBexzcM",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Working with State",
+                        lectureDuration: 750,
+                        lectureUrl: "https://youtu.be/4Z9KEBexzcM",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "Backend with Node.js & Express",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Building APIs",
+                        lectureDuration: 830,
+                        lectureUrl: "https://youtu.be/4Z9KEBexzcM",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Connecting to MongoDB",
+                        lectureDuration: 780,
+                        lectureUrl: "https://youtu.be/4Z9KEBexzcM",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1b0",
+        courseTitle: "UI Animation with CSS & JavaScript",
+        level: "Beginner",
+        courseDescription:
+            "<h2>Create interactive interfaces</h2><p>This course helps you design smooth UI animations using CSS transitions and JavaScript.</p><ul><li>CSS keyframes and transitions</li><li>JavaScript animation logic</li><li>Microinteractions & user experience</li></ul>",
+        coursePrice: 109.99,
+        isPublished: true,
+        discount: 8,
+        courseThumbnail:
+            "https://img.youtube.com/vi/zHUpx90NerM/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b31",
+        enrolledStudents: ["user_anim1"],
+        courseRatings: [],
+        createdAt: "2025-04-05T09:00:00.000Z",
+        updatedAt: "2025-04-06T11:30:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "CSS Animations",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "Understanding Transitions",
+                        lectureDuration: 600,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Keyframes in Action",
+                        lectureDuration: 690,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "JavaScript for UI Dynamics",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "DOM & Animation Events",
+                        lectureDuration: 720,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Creating Interactive Effects",
+                        lectureDuration: 760,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1b0",
+        courseTitle: "UI Animation with CSS & JavaScript",
+        level: "Beginner",
+        courseDescription:
+            "<h2>Create interactive interfaces</h2><p>This course helps you design smooth UI animations using CSS transitions and JavaScript.</p><ul><li>CSS keyframes and transitions</li><li>JavaScript animation logic</li><li>Microinteractions & user experience</li></ul>",
+        coursePrice: 109.99,
+        isPublished: true,
+        discount: 8,
+        courseThumbnail:
+            "https://img.youtube.com/vi/zHUpx90NerM/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b31",
+        enrolledStudents: ["user_anim1"],
+        courseRatings: [],
+        createdAt: "2025-04-05T09:00:00.000Z",
+        updatedAt: "2025-04-06T11:30:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "CSS Animations",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "Understanding Transitions",
+                        lectureDuration: 600,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Keyframes in Action",
+                        lectureDuration: 690,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "JavaScript for UI Dynamics",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "DOM & Animation Events",
+                        lectureDuration: 720,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Creating Interactive Effects",
+                        lectureDuration: 760,
+                        lectureUrl: "https://youtu.be/zHUpx90NerM",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        _id: "605c72efb3f1c2b1f8e4e1b1",
+        courseTitle: "SQL & Relational Databases",
+        level: "Beginner",
+        courseDescription:
+            "<h2>Manage and query data effectively</h2><p>This course teaches SQL syntax, data modeling, joins, indexing, and relational DB design.</p><ul><li>Learn SELECT, INSERT, UPDATE, DELETE</li><li>Understand JOIN operations</li><li>Design normalized schemas</li></ul>",
+        coursePrice: 99.99,
+        isPublished: true,
+        discount: 5,
+        courseThumbnail:
+            "https://img.youtube.com/vi/HXV3zeQKqGY/maxresdefault.jpg",
+        educator: "675ac1512100b91a6d9b8b32",
+        enrolledStudents: [],
+        courseRatings: [],
+        createdAt: "2025-04-18T16:00:00.000Z",
+        updatedAt: "2025-04-18T17:00:00.000Z",
+        __v: 1,
+        courseContent: [
+            {
+                chapterId: "chapter1",
+                chapterOrder: 1,
+                chapterTitle: "Getting Started with SQL",
+                chapterContent: [
+                    {
+                        lectureId: "lecture1",
+                        lectureTitle: "Introduction to SQL",
+                        lectureDuration: 700,
+                        lectureUrl: "https://youtu.be/HXV3zeQKqGY",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture2",
+                        lectureTitle: "Basic Queries",
+                        lectureDuration: 750,
+                        lectureUrl: "https://youtu.be/HXV3zeQKqGY",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+            {
+                chapterId: "chapter2",
+                chapterOrder: 2,
+                chapterTitle: "Advanced SQL Concepts",
+                chapterContent: [
+                    {
+                        lectureId: "lecture3",
+                        lectureTitle: "Joins & Aggregations",
+                        lectureDuration: 800,
+                        lectureUrl: "https://youtu.be/HXV3zeQKqGY",
+                        isPreviewFree: true,
+                        lectureOrder: 1,
+                    },
+                    {
+                        lectureId: "lecture4",
+                        lectureTitle: "Indexing & Optimization",
+                        lectureDuration: 850,
+                        lectureUrl: "https://youtu.be/HXV3zeQKqGY",
+                        isPreviewFree: false,
+                        lectureOrder: 2,
+                    },
+                ],
+            },
+        ],
     },
 ];

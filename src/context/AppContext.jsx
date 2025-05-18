@@ -110,6 +110,17 @@ const AppContextProvider = (props) => {
         return favorites.some((course) => course._id === courseID);
     };
 
+    // Enroll course
+    const enrollCourse = (course) => {
+        if (!isCourseEnrolled(course._id)) {
+            setEnrolledCourses((prev) => [...prev, course]);
+        }
+    };
+
+    const isCourseEnrolled = (courseID) => {
+        return enrolledCourses.some((course) => course._id === courseID);
+    };
+
     const value = {
         currency,
         allCourses,
@@ -127,6 +138,9 @@ const AppContextProvider = (props) => {
         addToFavorites,
         removeFromFavorites,
         isFavorite,
+        // enrolls
+        enrollCourse,
+        isCourseEnrolled,
     };
     return (
         <AppContext.Provider value={value}>

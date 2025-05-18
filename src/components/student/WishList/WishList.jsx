@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAppContext } from "../../../context/AppContext";
 import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import ReactPaginate from "react-paginate";
 
 import "./WishList.scss";
 
@@ -15,6 +16,9 @@ const WishList = () => {
         addToFavorites,
     } = useAppContext();
 
+    const [currentPage, setCurrentPage] = useState(0);
+    const itemsPerPage = 5;
+
     function onFavoriteClick(e, course) {
         e.preventDefault();
         if (isFavorite(course._id)) {
@@ -23,6 +27,14 @@ const WishList = () => {
             addToFavorites(course);
         }
     }
+
+    const handlePageClick = ({ selected }) => {
+        setCurrentPage(selected);
+    };
+
+    const offset = currentPage * itemsPerPage;
+    const paginatedFavorites = favorites.slice(offset, offset + itemsPerPage);
+    const pageCount = Math.ceil(favorites.length / itemsPerPage);
 
     if (!favorites || favorites.length === 0) {
         return (
@@ -44,6 +56,7 @@ const WishList = () => {
                 <h2 className="text-2xl font-semibold mb-4">
                     Wishlist ({favorites.length})
                 </h2>
+
                 <div className="border rounded-md overflow-hidden shadow-sm">
                     <div className="grid grid-cols-12 bg-gray-50 font-semibold text-sm px-4 py-2">
                         <div className="col-span-6">COURSE</div>
@@ -51,12 +64,10 @@ const WishList = () => {
                         <div className="col-span-3">ACTION</div>
                     </div>
 
-                    {favorites.map((item) => (
+                    {paginatedFavorites.map((item) => (
                         <Link
-                            to={"/course/" + item._id}
-                            onClick={() => {
-                                scrollTo(0, 0);
-                            }}
+                            to={`/course/${item._id}`}
+                            onClick={() => scrollTo(0, 0)}
                             key={item._id}
                             className="grid grid-cols-12 items-center px-4 py-4 border-t hover:bg-white transition duration-300 ease-in-out"
                         >
@@ -108,7 +119,7 @@ const WishList = () => {
                                 )}
                             </div>
 
-                            {/* Action */}
+                            {/* Actions */}
                             <div className="col-span-4 flex items-center gap-2 btn-group">
                                 <button className="px-5 py-2 bg-gray-100 rounded hover:bg-gray-200 transition-all duration-200">
                                     Buy Now
@@ -132,6 +143,30 @@ const WishList = () => {
                         </Link>
                     ))}
                 </div>
+
+                {pageCount > 1 && (
+                    <div className="flex justify-center my-8">
+                        <ReactPaginate
+                            previousLabel={"← Prev"}
+                            nextLabel={"Next →"}
+                            breakLabel={"..."}
+                            onPageChange={handlePageClick}
+                            pageCount={pageCount}
+                            containerClassName={"flex gap-2 text-sm"}
+                            pageClassName={
+                                "border px-3 py-1 rounded text-gray-700 hover:bg-blue-100"
+                            }
+                            activeClassName={"bg-blue-600 text-white"}
+                            previousClassName={
+                                "border px-3 py-1 rounded text-gray-700"
+                            }
+                            nextClassName={
+                                "border px-3 py-1 rounded text-gray-700"
+                            }
+                            disabledClassName={"opacity-50 cursor-not-allowed"}
+                        />
+                    </div>
+                )}
             </div>
         </div>
     );

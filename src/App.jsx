@@ -16,6 +16,8 @@ import MyCourses from "./pages/educator/MyCourses";
 import StudentsEnrolled from "./pages/educator/StudentsEnrolled";
 import Navbar from "./components/student/Navbar/Navbar";
 import WishList from "./components/student/WishList/WishList";
+import Cart from "./pages/student/Cart";
+import CartPage from "./pages/student/Cart";
 
 const App = () => {
     const isEducatorRoute = useMatch("/educator/*");
@@ -33,6 +35,7 @@ const App = () => {
                 <Route path="/player/:courseId" element={<Player />} />
                 <Route path="/loading/:path" element={<Loading />} />
                 <Route path="/wishlist" element={<WishList />} />
+                <Route path="/cart" element={<CartPage />} />
 
                 {/* Educator Routes */}
                 <Route path="/educator" element={<Educator />}>
